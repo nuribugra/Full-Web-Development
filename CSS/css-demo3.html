@@ -12,6 +12,7 @@
     <style>
         *{
             font-family: 'Lato', sans-serif;
+            box-sizing: border-box;
         }
         body {
             margin: 0;
@@ -139,11 +140,12 @@
         }
 
         .col{
-            width: calc(50% - 83px);
+            width: calc(50% - 5px);
+            vertical-align: top;
             display: inline-block;
-            height: 350px;
+            min-height: 350px;
             background-color: rgb(179, 246, 224);
-            margin-bottom: 150px;
+            margin: auto auto 80px auto;
         }
 
         .features__left {
@@ -154,8 +156,7 @@
 
         .features__right {
             background-color: #edf5f7;
-            vertical-align: top;
-            padding: 50px 80px 0px;
+            padding: 40px 60px;
             height: 300px;
 
         }
@@ -182,6 +183,70 @@
             color: #fcac93;
             background-color: white;
 
+        }
+
+
+        .row2 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .col2 {
+            display: inline-block;
+            vertical-align: top;
+            background-color: #edf5f7;
+            width: 32.1%;
+            text-align: center;
+            margin: 10px 5px;
+        }
+
+        .col2 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .special {
+            background-color: #396eb0;
+            color: white;
+            
+        }
+        .special .button {
+            background-color: #edf5f7;
+            color: #396eb0;
+            border-color: #396eb0;
+        }
+
+        .special .button:hover {
+            background-color: #396eb0;
+            color: #edf5f7;
+            border-color: #edf5f7;
+        }
+
+        .button {
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 5px 8px 5px 8px;
+            background-color: #fcac93;
+            border-radius: 3px;
+            margin: 20px auto;
+            width: 200px;
+
+        }
+
+        .button:hover{
+            border-color: #fcac93;
+            background-color: white;
+            color: #fcac93;
+            cursor: pointer;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
         }
 
 
@@ -240,16 +305,48 @@
         <!--div leri yan yana yapmak için html kodlarındada yan yana yazdık.-->
     </section>
 
-    <section class="plans">
-        <h3>Become a Premium Member</h3>
+    <section class="plans clearfix">
+        <h3 style="text-align: center;">Become a Premium Member</h3>
         <div class="row2">
             <div class="col2">
+                <h3>Free</h3>
+                <h4>$0/month</h4>
+                <ul>
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV Shows</li>
+                    <li>Watch on 1 device</li>
+                    <li>First Month FREE</li>
+                    <p class="button">Choose Plan</p>
+                </ul>
+            </div>
+            <div class="col2 special">
+                <h3 style="background-color: #fff; color: #fcac93;padding:8px 15px;border: 1px solid #edf5f7; border-radius: 3px;">Recommended</h3>
+                <h3>Basic</h3>
+                <h4>$14.99/month</h4>
+                <ul>
+                    <li>FHD available</li>
+                    <li>Unlimited Movies and TV Shows</li>
+                    <li>Watch on 2 device</li>
+                    <li>Download and watch offline</li>
+                    <li>First Month FREE</li>
+                    <p class="button">Choose Plan</p>
+                </ul>
+
+
 
             </div>
             <div class="col2">
+                <h3>Premium</h3>
+                <h4>$29.99/month</h4>
+                <ul>
+                    <li>4k available</li>
+                    <li>Unlimited Movies and TV Shows</li>
+                    <li>Watch on 4 device</li>
+                    <li>Download and watch offline</li>
+                    <li>First Month FREE</li>
+                    <p class="button">Choose Plan</p>
+                </ul>
 
-            </div>
-            <div class="col2">
                 
             </div>
         </div>
