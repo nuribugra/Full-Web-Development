@@ -61,6 +61,7 @@
 
         .nav {
             background-color: #fcac93;
+            height: 80px;
             width: 100%;
             position: fixed;
             top: 0;
@@ -112,7 +113,7 @@
             font-size: 30px;
             font-weight: bolder;
             position: absolute;
-            top: 50%;
+            top: 65%;
             left: 50%;
             margin: 0;
             transform: translate(-50%, -50%);
@@ -177,8 +178,9 @@
 
         .features__right {
             background-color: #edf5f7;
-            padding: 40px 60px;
+            padding: 40px 0px 0px 60px;
             height: 300px;
+            width: 50%;
 
         }
 
@@ -321,19 +323,32 @@
         #exp1 {
             font-size: 20px;
         }
+
+        .container {
+            margin: auto;
+            width: 1000px;
+        }
+
+        .specialcont {
+            width: 100%;
+        }
     </style>
 </head>
 <body id="body">
     <main>
     
-    <section class="nav">
-        <div id="logo" class="mnav"><a href="#*">MovieCenter</a></div>
-        <ul class="mnav">
-            <li><a href="#*">Movies</a></li>
-            <li><a href="#*">TV Series</a></li>
-            <li><a href="#*"><i class="fa-solid fa-right-to-bracket" id="btndf"></i></a></li>
-        </ul>
-    </section>
+        <section class="nav">
+            <div class="container">
+            <div id="logo" class="mnav"><a href="#*">MovieCenter</a></div>
+            <ul class="mnav">
+                <li><a href="#*">Movies</a></li>
+                <li><a href="#*">TV Series</a></li>
+                <li><a href="#*"><i class="fa-solid fa-right-to-bracket" id="btndf"></i></a></li>
+            </ul>
+            </div>
+        </section>
+    
+    
 
     <section class="greeting">
         <p id="head1">
@@ -342,41 +357,47 @@
 
         </p>
     </section>
-    <section id="how_it_works">
-    <h2>How it works?</h2>
-    <p class="explanation">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
-
-    <div class="txt1">
-        <i class="fa-solid fa-right-to-bracket"></i>
-        <h3>Register</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quis ratione, deserunt repellat molestiae dicta tempore. </p>
-    </div>
-    <div class="txt1">
-        <i class="fa-solid fa-check"></i>
-        <h3>Choose a Plan</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quis ratione, deserunt repellat molestiae dicta tempore. </p>
-    </div>
-    <div class="txt1">
-        <i class="fa-solid fa-heart"></i>
-        <h3>Enjoy Movify</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quis ratione, deserunt repellat molestiae dicta tempore. </p>
-    </div>
-    </section>
-
-    <section class="features">
-        <div class="row">
-            <div class="col features__left">
-
+    <div class="container">
+        <section id="how_it_works">
+            <h2>How it works?</h2>
+            <p class="explanation">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
+        
+            <div class="txt1">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h3>Register</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quis ratione, deserunt repellat molestiae dicta tempore. </p>
             </div>
-            <div class="col features__right">
-                <h3>Watch all Movies & TV Shows once they get released!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptate, iste perferendis corrupti debitis cupiditate, quibusdam rerum ipsum ducimus reiciendis alias ab ipsa suscipit quo ipsam nam impedit in quas.</p>
-                <a href="#*">View Features</a>
+            <div class="txt1">
+                <i class="fa-solid fa-check"></i>
+                <h3>Choose a Plan</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quis ratione, deserunt repellat molestiae dicta tempore. </p>
             </div>
-        </div>
+            <div class="txt1">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Enjoy Movify</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quis ratione, deserunt repellat molestiae dicta tempore. </p>
+            </div>
+            </section>
 
-        <!--div leri yan yana yapmak için html kodlarındada yan yana yazdık.-->
-    </section>
+    </div>
+    
+    <div class="container specialcont">
+        <section class="features">
+            <div class="row">
+                <div class="col features__left">
+    
+                </div><div class="col features__right">
+                    <h3>Watch all Movies & TV Shows once they get released!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptate, iste perferendis corrupti debitis cupiditate, quibusdam rerum ipsum ducimus reiciendis alias ab ipsa suscipit quo ipsam nam impedit in quas.</p>
+                    <a href="#*">View Features</a>
+                </div>
+            </div>
+    
+            <!--div leri yan yana yapmak için html kodlarındada yan yana yazdık.-->
+        </section>
+
+    </div>
+    
 
     <section class="plans clearfix">
         <h3 style="text-align: center;" id="baslik">Become a Premium Member</h3>
