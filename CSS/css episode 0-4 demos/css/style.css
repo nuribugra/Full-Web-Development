@@ -1,3 +1,7 @@
+@import url("buttons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
@@ -11,6 +15,11 @@ body {
 .container {
     width: 1100px;
     margin: auto;
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .header {
@@ -50,7 +59,7 @@ ul.mnav {
     transition: .3s;
 }
 .nav a:hover {
-    color: #d3d3cf;
+    color: #898986;
 }
 
 .nav ul {
@@ -132,7 +141,6 @@ ul.mnav {
 .col-3 {
     float: left;
     width: 33.3%;
-    text-align: center;
 }
 .col-4 {
     float: left;
@@ -241,29 +249,83 @@ ul.mnav {
     border-color: #F5F5F1;
 }
 
-.button {
-    border: 1px solid white;
-    color: white;
-    text-align: center;
-    padding: 5px 8px 5px 8px;
-    background-color: #fcac93;
-    border-radius: 3px;
-    margin: 20px auto;
-    width: 200px;
-    transition: .3s;
-}
-
-.button:hover{
-    border-color: #fcac93;
-    background-color: white;
-    color: #fcac93;
-    cursor: pointer;
-}
-
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
+
+.stats {
+    width: 100%;
+    background-color: #3a3636;
+    min-height: 150px;
+    padding: 45px;
+}
+
+.stats-txt {
+    color: #E50914;
+    font-size: 25px;
+    text-align: center;
+}
+
+.txt__features {
+    color: #F5F5F1;
+}
+
+.row2 {
+    width: 100%;
+    padding: 20px;
+}
+
+#cards {
+    width: 100%;
+    background-color: #2d2a2a;
+    min-height: 550px;
+}
+img.card__image {
+    width: 100%;
+    height: 400px; 
+    margin: 0;  
+}
+
+.card-col {
+    margin: 20px;
+    width: 29.5%;
+    /* position: relative;
+    top: 0; */
+    transition: .3s;
+}
+.card-col:hover {
+    /* top: -15px; */
+    transform: translateY(-10px);
+}
+
+.card__body {
+    background-color: #3a3636;
+    margin: 0;
+    padding: 15px;
+    color: #F5F5F1;
+}
+.card__body h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+.card__body p {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+
+/* Register Page */
+
+#register {
+    width: 100%;
+    background-color: #2d2a2a;
+    min-height: 850px;
+    padding-top: 20px;
+    position: relative;
+    top: 80px;
+}
+
 
 
