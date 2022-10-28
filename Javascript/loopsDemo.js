@@ -55,30 +55,5 @@ let students = [
 ];
 
 // Listedeki her öğrencinin not ortalaması ve başarı durumunu yazdır.
+// Tüm öğrencilerin not ortalamasını da bulsun.
 
-let average;
-
-// for (let student of students) {
-//     average = (student.scores[0] + student.scores[1] + student.scores[2]) / 3;
-//     console.log(average);
-//     if (average >= 50) {
-//                 console.log("Öğrenci başarılıdır.")
-//             }else {
-//                 console.log("Öğrenci başarısızdır.")
-//             }
-// }
-// for(let i=0; i<students.length; i++){
-//     average = (students[i].scores[0] + students[i].scores[1] + students[i].scores[2]) / 3;
-//     console.log(average);
-
-//     if (average >= 50) {
-//         console.log("Öğrenci başarılıdır.")
-//     }else {
-//         console.log("Öğrenci başarısızdır.")
-//     }
-// }
-
-
-// Tüm öğrencilerin not ortalaması
-
-// console.log(`Tüm öğrencilerin not ortalaması : ${}`
