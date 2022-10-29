@@ -15,4 +15,4 @@ print();
 
 // Fonksiyonlar kendi scope alanlarını oluşturur.
 // Block içerisinde yeni bir scope oluşmaz. (let, const)
-// Const ile tanımlanan değişkenler değiştirilemez.
+// Const ile tanımlanan değişkenler değiştirilemez.  
