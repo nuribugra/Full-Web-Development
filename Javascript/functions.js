@@ -13,10 +13,19 @@
 // greeting();
 
 function calculateAge(birthYear) {
-    let now = new Date().getFullYear();
-    let age = now - birthYear;
-    console.log(`${age} yaşındasınız.`);
+    return new Date().getFullYear() - birthYear;
 }
 
-calculateAge(2003);
-calculateAge(2002);
+console.log(calculateAge(2000));
+
+function calculateRetirement(birthYear) {
+    let age = calculateAge(birthYear);
+    let remainingYear = 65 - age;
+    if (remainingYear > 0) {
+        console.log(`Emekli olmanıza ${remainingYear} yıl kaldı.`);
+    }else {
+        console.log("Emekli oldunuz.");
+    }
+}
+
+calculateRetirement(2002);
