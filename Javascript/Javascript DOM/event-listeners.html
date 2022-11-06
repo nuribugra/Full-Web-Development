@@ -15,13 +15,15 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Todo App</h3>
+                        <h3 class="card-title">To-do App</h3>
                     </div>
                     <div class="card-body">
                         <form>
                             <div class="input-group">
-                                <input type="text" id="txtTaskName" class="form-control">
-                                <button type="submit" class="btn btn-success" id="btnAddNewTask">Add</button>
+                                <input type="text" id="TaskName" class="form-control">
+                                <button type="submit" class="btn btn-success" id="addButton">
+                                    Add
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -29,7 +31,9 @@
 
                 <div class="card mt-3">
                     <div class="card-header">
-                        <button type="button" id="btnClear" class="btn btn-danger btn-sm float-end">Clear</button>
+                        <button class="btn btn-danger float-end btn-sm" id="clearButton">
+                            Clear
+                        </button>
                     </div>
                     <ul id="task-list" class="list-group list-group-flush">
                     </ul>
@@ -38,12 +42,10 @@
         </div>
     </div>
 
-    
-
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script>
-        let sonuc;
+        let result;
 
         let taskList = [
             {"id": 1, "taskName": "Task 1"},
@@ -62,42 +64,21 @@
                     <label for="${task.id}" class="form-check-label">${task.taskName}</label>
                 </div>
             </li>
-        `;
+            `;
         
-        ul.insertAdjacentHTML("beforeend", li); //afterbegin
+            ul.insertAdjacentHTML("beforeend", li);
+        }
+        // document.querySelector("#clearButton").addEventListener("click", newTask);
+        
+        document.querySelector("#addButton").addEventListener("click", newTask);
+        
+        function newTask(event){
+            // console.log(event.target);
+            event.target.classList.add("btn-lg");
+
+            event.preventDefault(); //Elementn normal davranışını kapatır.
         }
 
-        // document.querySelector("#task-list").parentElement.remove();
-        // sonuc = document.querySelector("#task-list").children[0].remove();
-        // sonuc = document.querySelector("#task-list").children[1].remove();
-
-        // document.querySelector("#task-list").removeAttribute("class");
-
-        // sonuc = document.querySelector("#task-list").children[0].getAttribute("class");
-        // document.querySelector("#task-list").children[0].setAttribute("class", "abc");
-        // document.querySelector("#task-list").children[1].classList.add("bg-danger", "text-light");
-        // document.querySelector("#task-list").children[1].classList.remove("bg-primary", "text-light");
-        // sonuc = document.querySelector("#task-list").children[1].classList.contains("bg-primary", "text-light");
-
-        // console.log(sonuc);
-
-        // document.querySelector("#btnClear").addEventListener("click", function(event) {
-        //     console.log("click event: clear"); 
-
-        //     event.preventDefault();
-        // });
-        
-        document.querySelector("#btnAddNewTask").addEventListener("click", newTask);
-        
-        
-
-        function newTask(event) {
-            console.log(event); 
-
-            event.preventDefault();
-        }
-        
-
-    </script>
+        </script>
 </body>
 </html>
