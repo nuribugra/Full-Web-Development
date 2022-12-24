@@ -6,10 +6,10 @@ c = 3;
 // Atama operatörleri
 
 result += a // result = result + a
-result -= a // result = result + a
-result *= a // result = result + a
-result /= a // result = result + a
-result %= a // result = result + a
+result -= a // result = result - a
+result *= a // result = result * a
+result /= a // result = result / a
+result %= a // result = result % a
 
 
 
