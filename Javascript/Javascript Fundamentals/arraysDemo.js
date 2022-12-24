@@ -1,4 +1,4 @@
-// "Elma,armut,muz,çilek" ellemanlarına sahip bir dizi oluşturun.
+// "Elma,armut,muz,çilek" elemanlarına sahip bir dizi oluşturun.
 
 // let fruits = ["Apple", "Pear", "Banana", "Strawberry"];
 

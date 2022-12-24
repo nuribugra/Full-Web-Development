@@ -17,7 +17,7 @@ let numbers = [1,5,7,15,3,25,12,24];
 //     }
 // }
 
-// Listedeki çift sayıların toplamınu bulunuz.
+// Listedeki çift sayıların toplamını bulunuz.
 
 // let total = 0;
 // for (let i in numbers) {
