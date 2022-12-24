@@ -47,7 +47,7 @@ let products = ["iphone 12", "samsung s22", "iphone 13", "samsung s23"];
 // console.log(count);
 
 let students = [
-    {"name":"yiğit","lastName":"bilgi","scores":[60,20,60]},
+    {"name":"yiğit","lastName":"bilgi","scores":[40,20,60]},
     {"name":"ada","lastName":"bilgi","scores":[80,70,80]},
     {"name":"çınar","lastName":"turan","scores":[70,70,60]},
     {"name":"Şakir","lastName":"Karaeski","scores":[75,50,60]},
@@ -56,4 +56,18 @@ let students = [
 
 // Listedeki her öğrencinin not ortalaması ve başarı durumunu yazdır.
 // Tüm öğrencilerin not ortalamasını da bulsun.
+
+let average;
+let isPass;
+for(let student of students){
+    average = (student.scores[0] + student.scores[1] + student.scores[2]) / 3;
+    if (average >= 45){
+        isPass = "Geçtin";
+    }else {
+        isPass = "Kaldın";
+    };
+    console.log(`Sevgili ${student.name} ${student.lastName},
+    Ortalaman: ${average.toFixed(2)}
+    Geçme Durumun: ${isPass}`)
+}
 
