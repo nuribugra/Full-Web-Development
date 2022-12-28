@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title h1" id="title">To-do App</h3>
+    </div>
+    
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+
+    <script>
+        let sonuc;
+
+        sonuc = document.getElementById("title");
+        sonuc = document.getElementById("title").id;
+        sonuc = document.getElementById("title").className;
+        sonuc = document.getElementById("title").classList;
+
+        document.getElementById("title").style.fontSize = "30px";
+        document.getElementById("title").style.fontStyle = "italic";
+        document.getElementById("title").style.color = "blueviolet";
+        // document.getElementById("title").style.display = "none";
+        document.getElementById("title").style.fontFamily = "Tahoma";
+
+        document.getElementById("title").innerText = "TO-DO APP";  // Etiketleri görmez sadece yazıyı değiştirir
+        document.getElementById("title").innerHTML = "<p>TO-DO APP</p>"; // Etiketlere duyarlıdır. Etiketi ekler.
+
+        document.querySelector("#title").style.color = "lime"; // Bu metot ile de eleman seçilebilir.
+        document.querySelector(".card-header").style.background = "aqua";
+
+        sonuc = document.querySelector("li:first-child")
+        sonuc = document.querySelector("li:last-child")
+        sonuc = document.querySelector("li:nth-child(1)") // İstediğin elemanı seçebilirsin.
+        
+        console.log(sonuc);
+    </script>
+</body>
+</html>
